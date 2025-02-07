@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maansick - ISL Conversion</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ttistyle.css') }}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        #uploadButton {
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+        #hintMessage {
+            color: red;
+            display: none;
+            margin-top: 5px;
+        }
+        .input-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .input-section form {
+            display: flex;
+            align-items: center;
+        }
+        .input-section .input-field {
+            margin-right: 10px;
+        }
+        .content-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Maansick Logo" class="logo">
+            <h1>Maansick</h1>
+        </div>
+        <nav class="nav">
+            <a href="Home.html">Home</a>
+            <a href="#">Help</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="input-section">
+        <form action="/part1" method="POST" enctype="multipart/form-data">
+            <input type="text" class="input-field" name="giventext" placeholder="Enter text">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="input-section">
+        <form action="/part1" method="POST" enctype="multipart/form-data">
+            <input type="file" id="fileInput" name="fileInput">
+            <button type="submit" id="uploadButton">Upload </button>
+            <p class="hint-message" id="hintMessage">Please upload a file before submitting.</p>
+        </form>
+    </section>
+
+    <section class="content-section">
+        <div class="content-box">
+            <img src="{{ url_for('static', filename='output.jpg') }}" alt="No Image">
+        </div>
+        <div class="contentt-box">
+{#            <p>TEXT</p>#}
+            {% if transcribed_text %}
+                <p><strong></strong> {{ transcribed_text }}</p>
+            {% else %}
+                <p>No transcription available.</p>
+            {% endif %}
+        </div>
+    </section>
+
+    <script>
+        function validateForm() {
+            const fileInput = document.getElementById('fileInput');
+            const hintMessage = document.getElementById('hintMessage');
+
+            if (fileInput.files.length === 0) {
+                hintMessage.style.display = 'block'; // Show hint message
+                return false; // Prevent form submission
+            }
+            hintMessage.style.display = 'none'; // Ensure hint message is hidden on successful file selection
+            return true; // Allow form submission
+        }
+    </script>
+</body>
+</html>

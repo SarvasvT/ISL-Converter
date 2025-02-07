@@ -1,0 +1,161 @@
+body {
+    background-image: url("../janko-sebok-2COrlBb8KyQ-unsplash.jpg");
+    background-size: auto;
+    background-repeat: no-repeat,repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  header .logo-container h1 {
+    font-family: 'Iowan Old Style', serif;
+    font-size: 24px;
+    color:white;
+  }
+/* Header Styles */
+.header {
+    background-color: #501B89;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd;
+}
+.logo h1 {
+    color: #4A0E7C;
+    font-size: 24px;
+    margin: 0;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.cambox {
+    width: 60%;
+    height: 400px;
+    background-color: rgb(241, 237, 237);
+    border-radius: 0px;
+    border: 1px solid #ebe7e7;
+    margin: 30px auto;
+    position: relative;
+}
+
+
+.record-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid red;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1) translateX(-50%);
+    }
+    50% {
+        transform: scale(1.2) translateX(-50%);
+    }
+}
+
+.live-text {
+    font-size: 18px;
+    margin: 10px auto;
+
+    color: black;
+}
+
+
+    .live-textbox {
+        width: 60%;
+        height: 90px;
+        background-color:rgb(241, 237, 237);
+        border-radius: 0px;
+        border: 1px solid #D0D0D0;
+        margin: 20px auto;
+        padding: 5px;
+        box-sizing: border-box;
+        overflow-y: auto; /* Make the container scrollable */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+
+    }
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button-container button {
+    background-color: #501B89;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+.button-container button:hover {
+    background-color: #3A1266;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+
+    .navbar h1 {
+        font-size: 24px;
+    }
+
+    .live-text {
+        font-size: 16px;
+    }
+
+    .button-container button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maansick</title>
+    <link href="https://fonts.googleapis.com/css?family=Iowan+Old+Style&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Times+New+Roman&display=swap" rel="stylesheet">
+{#    <link rel="stylesheet" href="static/css/Homestyle.css">#}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Homestyle.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../static/logo.png" alt="Maansick Logo" class="logo">
+            <h1>Maansick</h1>
+        </div>
+        <div class="cta">
+            <button>Get started</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="hover-panel">
+                <a href="/part1">
+                    <button class="arrow-button">&#8594;</button>
+                </a>
+            </div>
+            <div class="content text-container text-right">
+                <h2>Seamless Audio to ISL Conversion</h2>
+                <p>Our tool uses cutting-edge AI to translate spoken language into Indian Sign Language (ISL) with high accuracy, enabling real-time communication for the deaf community.</p>
+            </div>
+            <div class="image">
+                <img src="../static/sampleimg.jpg" alt="Audio to ISL Conversion">
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="image">
+                <img src="../static/sampleimg.jpg" alt="Sign Language to Text">
+            </div>
+            <div class="content text-container text-left">
+                <h2>Real-Time Sign Language to Text</h2>
+                <p>The tool also converts ISL gestures into written text instantly, ensuring that anyone can understand and respond, even if they don't know sign language.</p>
+                <div class="hover-panel">
+                    <a href="/part2">
+                        <button class="arrow-button arrow-right">&larr;</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <h2>Maansick</h2>
+        </div>
+        <div class="footer-links">
+            <div class="footer-section">
+                <h3>Home</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Solutions</h3>
+                <ul>
+                    <li><a href="#">For you</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

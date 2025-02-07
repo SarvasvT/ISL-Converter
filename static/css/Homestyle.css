@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Times New Roman', serif;
+  color: #501B89;
+  background-color: #FAF6F3;
+}
+header .logo-container h1 {
+  font-family: 'Iowan Old Style', serif;
+  font-size: 24px;
+  color:white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #501B89;
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+header .logo-container h1 {
+  font-family: 'Iowan Old Style', serif;
+  font-size: 24px;
+  color: white;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+header .cta button {
+  background-color: #501B89;
+  color: white;
+  font-family: 'Iowan Old Style', serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  padding: 50px;
+}
+.section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  background-color: #FAF6F3;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #4E2583;
+}
+
+.arrow-button {
+  background-color: #ffffff;
+  color: #4A0E7C;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.arrow-button:hover {
+  background-color: #4A0E7C;
+  color: #ffffff;
+}
+.section a{
+  text-decoration: none;
+}
+
+.arrow-right{
+  position: absolute;
+  right:-110px;
+  top:50%;
+}
+
+.section .text-container {
+  padding: 50px;
+  width: 50%;
+  position: relative;
+  text-align: left;
+  color: #501B89;
+  transition: color 0.3s ease;
+}
+
+.section img {
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.section:hover img {
+  transform: scale(1.1);
+}
+
+.section .content {
+  width: 45%;
+  color: #501B89;
+}
+
+.section .content h2 {
+  font-size: 28px;
+  font-family: 'Iowan Old Style', serif;
+  margin-bottom: 20px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.section .content p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.section .image {
+  width: 45%;
+}
+
+.section .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.section:hover .text-container {
+  color: #FFFFFF;
+}
+
+footer {
+  background-color: #501B89;
+  color: white;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer .footer-logo h2 {
+  font-family: 'Iowan Old Style', serif;
+  font-size: 24px;
+}
+
+footer .footer-links {
+  display: flex;
+  gap: 500px;
+  padding-right: 100px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}

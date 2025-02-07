@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maansick</title>
+    <style>
+        #video {
+            width: 910px;
+            height: 403px;
+            margin: auto;
+            display: block;
+            object-fit: cover; /* Ensures the image scales properly */
+        }
+        #label {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+    </style>
+{#    <link rel="stylesheet" href="../static/ittstyle.css">#}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ittstyle.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="../static/logo.png" alt="Maansick Logo" class="logo">
+            <h1>Maansick</h1>
+        </div>
+        <nav class="nav">
+            <a href="home.html">Home</a>
+            <a href="#">Help</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- <div class="container"> -->
+        <div class="cambox">
+            <img src="{{ url_for('video_feed') }}" width="910" height="400" />
+            <div class="record-btn"></div>
+        </div>
+        <!-- <div class="live-text">Text box</div> -->
+        <div class="live-textbox"></div>
+
+        <div class="button-container">
+            <button onclick="copyText()">Copy</button>
+            <button onclick="clearText()">Clear</button>
+        </div>
+    <!-- </div> -->
+
+{#    <script>#}
+{#        function fetchLabel() {#}
+{#            fetch('/current_label')#}
+{#                .then(response => response.json())#}
+{#                .then(data => {#}
+{#                    document.getElementById('label').textContent = data.label;#}
+{#                });#}
+{#        }#}
+{##}
+{#        // Fetch the label every second#}
+{#        setInterval(fetchLabel, 1000);#}
+{#    </script>#}
+</body>
+</html>

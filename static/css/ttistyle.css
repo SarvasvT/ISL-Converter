@@ -1,0 +1,147 @@
+body {
+    background-image: url("../janko-sebok-2COrlBb8KyQ-unsplash.jpg");
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #faf6f2;
+}
+
+.input-field{
+    margin-left: 50px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  header .logo-container h1 {
+    font-family: 'Iowan Old Style', serif;
+    font-size: 24px;
+    color:white;
+  }
+/* Header Styles */
+.header {
+    background-color: #501B89;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd;
+}
+.logo h1 {
+    color: #4A0E7C;
+    font-size: 24px;
+    margin: 0;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.input-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*margin: 40px 0;*/
+    padding: 10px;
+    position: relative;
+    background-color: #ddd;
+    border-radius: 10px;
+    width: 70%;
+    margin: 40px auto;
+}
+
+.input-field {
+    border: none;
+    width: 800px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-left: 10px;
+    outline: none;
+}
+
+.icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.icon-left {
+    left: 15px;
+}
+
+.icon-right {
+    right: 15px;
+}
+
+.icon i {
+    font-size: 20px;
+    color: #4A0E7C;
+}
+
+.content-section {
+    flex-direction:column;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+    margin: 60px auto;
+}
+
+.content-box {
+    flex: 1;
+    height: 360px;
+
+
+
+    background-color: #ddd;
+    border-radius: 15px;
+    /*display: flex;*/
+    align-items: center;
+    /*justify-content: center;*/
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    overflow-x: auto;
+}
+.content-box img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contentt-box {
+    flex: 2;
+    height: 350px;
+    background-color: #ddd;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    overflow-y: auto;
+    overflow-x: auto;
+}
